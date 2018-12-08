@@ -43,7 +43,7 @@ train_data = np.load(file_name)
 
 shuffle(train_data)
 
-data = np.array([i[1] for i in train_data]).reshape(-1,timesteps,WIDTH,HEIGHT,1)
+data = np.array([i[1] for i in train_data]).reshape(-1,timesteps,WIDTH,HEIGHT,3)
 label = np.array([i[2] for i in train_data]).reshape(-1,timesteps,7)
 
 #data2 - np.
